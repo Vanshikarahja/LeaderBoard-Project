@@ -8,7 +8,9 @@ import './App.css'; // Import the main CSS file
 // --- API Configuration ---
 // IMPORTANT: This should match the port your Node.js backend is running on.
 // Based on your app.js, it's likely 3001.
-const API_BASE_URL = 'http://localhost:3001/api';
+const API_BASE_URL = 'https://leaderboard-project-eo3g.onrender.com/api'; // Adjust if your backend is hosted elsewhere
+
+
 
 // --- API Functions (Centralized here for clarity) ---
 

@@ -108,7 +108,7 @@ package.json
 
 ## 🔌 API Endpoints
 
-Base URL: `http://localhost:5000`
+Base URL: `http://localhost:3001`
 
 | Method | Endpoint               | Description                      |
 |--------|------------------------|----------------------------------|

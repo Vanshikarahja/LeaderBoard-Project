@@ -4,25 +4,34 @@ A full-stack leaderboard application where users can be added, selected, assigne
 
 ## 🛠 Tech Stack
 
-- **Frontend**: ReactJS (Vite) + TailwindCSS
+- **Frontend**: ReactJS (Vite) + Tailwind CSS
 - **Backend**: Node.js + Express.js
 - **Database**: MongoDB Atlas
-- **API Client**: Postman
-- **State & API Handling**: Axios
+- **API Testing**: Postman
+- **HTTP Client**: Axios
+
+---
+
+## 📸 Preview
+
+
+
+![Leaderboard UI](./preview.png)
 
 ---
 
 ## 📁 Folder Structure
 
-### 📦 `leaderboard-frontend/`
+### `leaderboard-frontend/`
 
+```
 src/
 ├── components/
-│ ├── Leaderboard.jsx
-│ ├── UserCard.jsx
-│ ├── UserSelector.jsx
-│ ├── ClaimButton.jsx
-│ └── UserHistory.jsx
+│   ├── Leaderboard.jsx
+│   ├── UserCard.jsx
+│   ├── UserSelector.jsx
+│   ├── ClaimButton.jsx
+│   └── UserHistory.jsx
 ├── App.jsx
 ├── App.css
 └── main.jsx
@@ -30,19 +39,19 @@ src/
 index.html
 vite.config.js
 package.json
+```
 
+### `leaderboard-backend/`
 
-### 📦 `leaderboard-backend/`
-
+```
 models/
 ├── User.js
 └── History.js
 
-.env # MongoDB URI, PORT
-app.js # Main entry point
+.env              # MongoDB URI, PORT
+app.js            # Main server file
 package.json
-
-
+```
 
 ---
 
@@ -50,84 +59,106 @@ package.json
 
 ### 🔙 Backend Setup
 
-1. Navigate to the backend folder:
-   
+1. Go to the backend folder:
+   ```bash
    cd leaderboard-backend
-   
-2.Install dependencies:
-    
- npm install express mongoose cors dotenv
+   ```
 
-3.Set up your .env file:
-
- MONGODB_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/leaderboard_db
-PORT=5000
-
-4.Run the server
-  node app.js
-
-  Server running on port 3001
-
-
-🔜 Frontend Setup
-1.Navigate to the frontend folder:
-    ```bash
-   cd myleaderboard-app
-
-
-2.Install dependencies:
-  npm install
-
-3.Run the app: 
-  npm run dev
-frontend runs on http://localhost:5173
-
-
-🔌 API Endpoints
-Base URL: http://localhost:5000
-
-Method	Endpoint	Description
-POST	/api/users	Add a new user
-GET	/api/users	Get all users
-POST	/api/claim/:userId	Claim random points for a user
-GET	/api/history/:userId	Get point history of a user
-
-Test your APIs with Postman.
-
-
-
-📦 Dependencies Used
-1. Backend
+2. Install dependencies:
+   ```bash
    npm install express mongoose cors dotenv
-2.Frontend
-   npm create vite@latest my-leaderboard-app
+   ```
+
+3. Create a `.env` file:
+   ```
+   MONGODB_URI=your_mongodb_connection_string
+   PORT=5000
+   ```
+
+4. Start backend server:
+   ```bash
+   node app.js
+   ```
+
+> Backend running on: `http://localhost:5000`
+
+---
+
+### 🔜 Frontend Setup
+
+1. Go to the frontend folder:
+   ```bash
+   cd leaderboard-frontend
+   ```
+
+2. Install dependencies:
+   ```bash
    npm install
-   npm install axios
-   npm install -D tailwindcss postcss autoprefixer
-   npx tailwindcss init -p
+   ```
 
+3. Start frontend:
+   ```bash
+   npm run dev
+   ```
 
+> Frontend running on: `http://localhost:5173`
 
-🧩 Components Breakdown
-   UserSelector.jsx: Dropdown to select a user
+---
 
-   ClaimButton.jsx: Random point generator
+## 🔌 API Endpoints
 
-   Leaderboard.jsx: Displays sorted users
+Base URL: `http://localhost:5000`
 
-   UserCard.jsx: Displays each user's data
+| Method | Endpoint               | Description                      |
+|--------|------------------------|----------------------------------|
+| POST   | `/api/users`           | Add a new user                   |
+| GET    | `/api/users`           | Get all users                    |
+| POST   | `/api/claim/:userId`   | Assign random points to a user   |
+| GET    | `/api/history/:userId` | Get point history for a user     |
 
-   UserHistory.jsx: Shows claimed points history
+> Use **Postman** to test APIs.
 
+---
 
-📸 Preview
+## 📦 Dependencies
 
-![Leaderboard UI](./preview.png)
+### ✅ Backend
 
+```bash
+npm install express mongoose cors dotenv
+```
 
-👤 Author
-Vanshika Raheja
-🔗 [LinkedIn Profile](https://www.linkedin.com/in/vanshika-raheja-21095b281/)
+### ✅ Frontend
+
+```bash
+npm create vite@latest leaderboard-frontend
+npm install
+npm install axios
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+
+---
+
+## 🧩 Main Components (Frontend)
+
+| Component       | Purpose                                |
+|----------------|----------------------------------------|
+| `UserSelector` | Dropdown to select user                |
+| `ClaimButton`  | Button to assign random points         |
+| `Leaderboard`  | Sorted leaderboard display             |
+| `UserCard`     | User’s individual info display         |
+| `UserHistory`  | Point claim history for selected user  |
+
+---
+
+## 👤 Author
+
+**Vanshika Raheja**  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/vanshika-raheja-21095b281/)
+
+---
+
 
 
 

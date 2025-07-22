@@ -16,7 +16,8 @@ A full-stack leaderboard application where users can be added, selected, assigne
 
 
 
-![Leaderboard UI](./preview.png)
+![Leaderboard UI](./https://github.com/Vanshikarahja/LeaderBoard-Project/blob/main/preview.png.png?raw=true)
+![Leaderboard UI](./https://github.com/Vanshikarahja/LeaderBoard-Project/blob/main/preview2.png.png?raw=true)
 
 ---
 
@@ -72,7 +73,7 @@ package.json
 3. Create a `.env` file:
    ```
    MONGODB_URI=your_mongodb_connection_string
-   PORT=5000
+   PORT=30001
    ```
 
 4. Start backend server:
@@ -80,7 +81,7 @@ package.json
    node app.js
    ```
 
-> Backend running on: `http://localhost:5000`
+> Backend running on: `http://localhost:3001`
 
 ---
 

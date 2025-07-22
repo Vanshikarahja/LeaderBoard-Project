@@ -31,9 +31,6 @@ index.html
 vite.config.js
 package.json
 
-shell
-Copy
-Edit
 
 ### 📦 `leaderboard-backend/`
 
@@ -45,9 +42,7 @@ models/
 app.js # Main entry point
 package.json
 
-yaml
-Copy
-Edit
+
 
 ---
 
@@ -56,49 +51,37 @@ Edit
 ### 🔙 Backend Setup
 
 1. Navigate to the backend folder:
-   ```bash
+   
    cd leaderboard-backend
-Install dependencies:
+   
+2.Install dependencies:
+    
+ npm install express mongoose cors dotenv
 
-bash
-Copy
-Edit
-npm install express mongoose cors dotenv
-Set up your .env file:
+3.Set up your .env file:
 
-ini
-Copy
-Edit
-MONGODB_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/leaderboard_db
+ MONGODB_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/leaderboard_db
 PORT=5000
-Run the server:
 
-bash
-Copy
-Edit
-node app.js
-Your backend runs on http://localhost:5000
+4.Run the server
+  node app.js
+
+  Server running on port 3001
+
 
 🔜 Frontend Setup
-Navigate to the frontend folder:
+1.Navigate to the frontend folder:
+    ```bash
+   cd myleaderboard-app
 
-bash
-Copy
-Edit
-cd leaderboard-frontend
-Install dependencies:
 
-bash
-Copy
-Edit
-npm install
-Run the app:
+2.Install dependencies:
+  npm install
 
-bash
-Copy
-Edit
-npm run dev
-Your frontend runs on http://localhost:5173
+3.Run the app: 
+  npm run dev
+frontend runs on http://localhost:5173
+
 
 🔌 API Endpoints
 Base URL: http://localhost:5000
@@ -111,43 +94,62 @@ GET	/api/history/:userId	Get point history of a user
 
 Test your APIs with Postman.
 
+
+
 📦 Dependencies Used
-✅ Backend
-bash
-Copy
-Edit
-npm install express mongoose cors dotenv
-✅ Frontend
-bash
-Copy
-Edit
-npm create vite@latest leaderboard-frontend
-npm install
-npm install axios
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
-Tailwind configured in:
+1. Backend
+   npm install express mongoose cors dotenv
+2.Frontend
+   npm create vite@latest my-leaderboard-app
+   npm install
+   npm install axios
+   npm install -D tailwindcss postcss autoprefixer
+   npx tailwindcss init -p
 
-tailwind.config.js
 
-src/index.css or App.css
 
 🧩 Components Breakdown
-UserSelector.jsx: Dropdown to select a user
+   UserSelector.jsx: Dropdown to select a user
 
-ClaimButton.jsx: Random point generator
+   ClaimButton.jsx: Random point generator
 
-Leaderboard.jsx: Displays sorted users
+   Leaderboard.jsx: Displays sorted users
 
-UserCard.jsx: Displays each user's data
+   UserCard.jsx: Displays each user's data
 
-UserHistory.jsx: Shows claimed points history
+   UserHistory.jsx: Shows claimed points history
+
 
 📸 Preview
-md
-Copy
-Edit
+
 ![Leaderboard UI](./preview.png)
+
+
 👤 Author
 Vanshika Raheja
-🔗 LinkedIn
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/vanshika-raheja-21095b281/)
+
+
+
+   
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

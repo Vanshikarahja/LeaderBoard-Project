@@ -11,6 +11,12 @@ A full-stack leaderboard application where users can be added, selected, assigne
 - **HTTP Client**: Axios
 
 ---
+# 🚀 Leaderboard Web App
+
+🔗 **Live Demo:** [Click here to view live](https://leader-board-project-eight.vercel.app)
+
+This project is a leaderboard web application where users can claim random points, and rankings update dynamically in real time.
+
 
 ## 📸 Preview
 

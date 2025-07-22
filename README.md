@@ -16,8 +16,8 @@ A full-stack leaderboard application where users can be added, selected, assigne
 
 
 
-![Leaderboard UI](./https://github.com/Vanshikarahja/LeaderBoard-Project/blob/main/preview.png.png?raw=true)
-![Leaderboard UI](./https://github.com/Vanshikarahja/LeaderBoard-Project/blob/main/preview2.png.png?raw=true)
+![Leaderboard UI](https://github.com/Vanshikarahja/LeaderBoard-Project/blob/main/preview.png.png?raw=true)
+![Leaderboard UI](https://github.com/Vanshikarahja/LeaderBoard-Project/blob/main/preview2.png.png?raw=true)
 
 ---
 
